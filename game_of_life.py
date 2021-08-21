@@ -75,6 +75,9 @@ def generate_next_generation(old_generation):
 
     return new_generation
 
+# Initial preview.
+print_grid(grid)
+
 for i in range(generations_count):
     # Wait before clearing the console.
     time.sleep(frame_delay_in_seconds)
