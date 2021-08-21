@@ -1,0 +1,35 @@
+[33mcommit 5c41072a20d99cde4022c785fa5577126da0978c[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: akhill4054 <distanceuploaders@gmail.com>
+Date:   Sat Aug 21 23:39:19 2021 +0530
+
+    Removed initial preview
+
+[33mcommit e0ce9a521822b020227453f86c45b7429ce6a229[m
+Author: Akhil Pandey <distanceuploaders@gmail.com>
+Date:   Thu Jul 1 14:38:36 2021 +0530
+
+    Update README.md
+
+[33mcommit f070afe30513a6a7088f90d30ba51ab8211e3ddf[m
+Author: Akhil Pandey <distanceuploaders@gmail.com>
+Date:   Thu Jul 1 14:36:28 2021 +0530
+
+    Update README.md
+
+[33mcommit 3a07cd40e9b9180a4012f71726d76e02fa474c93[m
+Author: Akhil Pandey <distanceuploaders@gmail.com>
+Date:   Thu Jul 1 14:05:35 2021 +0530
+
+    Update README.md
+
+[33mcommit 7c2180d9002c41f7d522cf1397856cf39763e180[m
+Author: akhill4054 <distanceuploaders@gmail.com>
+Date:   Thu Jul 1 13:41:47 2021 +0530
+
+    Added game of life python script [First commit]
+
+[33mcommit 064240a1d4174c1ca62518671f6d52d5a734da55[m
+Author: Akhil Pandey <distanceuploaders@gmail.com>
+Date:   Thu Jul 1 13:36:58 2021 +0530
+
+    Initial commit
