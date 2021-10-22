@@ -1,8 +1,9 @@
 import time
 import sys
 
-# # To clear the console
+# To clear the console
 # sys.stdout.flush()
+# Removing the above line for now.
 
 # Initial configuations.
 grid_size = 20
