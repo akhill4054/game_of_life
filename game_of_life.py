@@ -5,8 +5,8 @@ import sys
 # sys.stdout.flush()
 
 # Initial configuations.
-grid_size = 20
-generations_count = 20
+grid_size = 2000
+generations_count = 205
 frame_delay_in_seconds = 0.5
 # List of tuples with two values, (x, y) each (x, y) represent 
 # the coordiantes of a seed point which is alive on the grid.
