@@ -8,6 +8,7 @@ import sys
 grid_size = 2000
 generations_count = 205
 frame_delay_in_seconds = 0.5
+
 # List of tuples with two values, (x, y) each (x, y) represent 
 # the coordiantes of a seed point which is alive on the grid.
 # Note: Top left point is (1, 1) and bottom most is (n, n),
