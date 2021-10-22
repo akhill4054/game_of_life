@@ -16,7 +16,10 @@ frame_delay_in_seconds = 0.5
 seed_points = [(8, 8), (8, 9), (8, 10), (7, 10), (6, 9)]
 
 # Utility methods.
-get_new_grid = lambda size: [[0 for i in range(size)] for i in range(size)]
+
+
+def get_new_grid(size): return [[0 for i in range(size)] for i in range(size)]
+
 
 def print_grid(grid):
     for i in range(len(grid)):
@@ -26,12 +29,14 @@ def print_grid(grid):
         sys.stdout.write('\n')
     sys.stdout.write('\n')
 
+
 # Generating the grid (2D list of nxn size, where n = grid_size).
 grid = get_new_grid(grid_size)
 
 # Reflecting seed points on the grid.
 for point in seed_points:
     grid[point[0] - 1][point[1] - 1] = 1
+
 
 def generate_next_generation(old_generation):
     # Generating the next generation
@@ -45,26 +50,30 @@ def generate_next_generation(old_generation):
             neighbor_count = 0
 
             # Top
-            if i > 0: 
+            if i > 0:
                 neighbor_count += grid[i - 1][j]
                 # Top-left
-                if j > 0: neighbor_count += old_generation[i - 1][j - 1]
+                if j > 0:
+                    neighbor_count += old_generation[i - 1][j - 1]
                 # Top-right
-                if j < grid_size - 1: neighbor_count += old_generation[i - 1][j + 1]
+                if j < grid_size - 1:
+                    neighbor_count += old_generation[i - 1][j + 1]
             # Bottom
             if i < grid_size - 1:
                 neighbor_count += grid[i + 1][j]
                 # Bottom-left
-                if j > 0: neighbor_count += old_generation[i + 1][j - 1]
+                if j > 0:
+                    neighbor_count += old_generation[i + 1][j - 1]
                 # Bottom-right
-                if j < grid_size - 1: neighbor_count += old_generation[i + 1][j + 1]
+                if j < grid_size - 1:
+                    neighbor_count += old_generation[i + 1][j + 1]
             # Left
             if j > 0:
                 neighbor_count += old_generation[i][j - 1]
             # Right
-            if j < grid_size - 1: 
+            if j < grid_size - 1:
                 neighbor_count += old_generation[i][j + 1]
-            
+
             if neighbor_count == 3:
                 # Cell becomes alive due to reproduction, if dead.
                 # If alive then it will stay alive.
@@ -75,6 +84,7 @@ def generate_next_generation(old_generation):
             # else: Cell dies either by overcrowding or underpopulation.
 
     return new_generation
+
 
 # Initial preview.
 print_grid(grid)
