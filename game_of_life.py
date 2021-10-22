@@ -16,8 +16,6 @@ frame_delay_in_seconds = 0.5
 seed_points = [(8, 8), (8, 9), (8, 10), (7, 10), (6, 9)]
 
 # Utility methods.
-
-
 def get_new_grid(size): return [[0 for i in range(size)] for i in range(size)]
 
 
